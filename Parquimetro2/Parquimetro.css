@@ -1,0 +1,61 @@
+*,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: #304233;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    background-color: #5D6C67;
+    color: #f0f0f0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+h2 {
+    color: #f0f0f0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+#valorAdicionado {
+    height: 30px;
+    width: 200px;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    margin: 5px;
+}
+
+button {
+    background-color: #FF5B49;
+    color: #f0f0f0;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
+    height: 30px;
+    width: 150px;
+}
+
+h3 {
+    color: #CC8272;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+button:hover {
+    background-color: #BA1300;
+    color: #f0f0f0;
+    height: 35px;
+    width: 160px;
+    cursor: pointer;
+}
