@@ -1,0 +1,171 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --first-color: #FFAA88;
+  --second-color: #604F4B;
+  --third-color: #8C3430;
+  --fourth-color: #F7F2E0;
+}
+
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  line-height: 1.6;
+  background-color: var(--fourth-color);
+  color: var(--second-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+}
+
+img {
+    display: block;       
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--third-color);
+  text-align: center;
+}
+
+nav {
+    display:flex;
+    background-color: var(--first-color);
+    padding: 1rem;
+    min-width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--second-color);
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    color: var(--second-color);
+}
+
+#Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    height: 20rem;
+    background-color: var(--second-color);
+    color: var(--fourth-color);
+}
+
+#SobreNos {
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--fourth-color);
+    color: var(--second-color);
+}
+
+#SobreNos h2 {
+    text-align: center;
+    color: var(--first-color);
+}
+
+#Servicos {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--second-color);
+    color: var(--fourth-color);
+}
+
+#Depoimentos {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap:20px;
+    margin-top: 20px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--fourth-color);
+    color: var(--second-color);
+}
+
+#Servicos h2, #Depoimentos h2, #Contato h2 {
+    text-align: center;
+    color: var(--first-color);
+    grid-column: 1 / -1;
+}
+
+#Contato {
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+    margin: 30px;
+    border: solid 2px var(--first-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+input{
+    padding: 0.5rem;
+    border: 1px solid var(--first-color);
+    border-radius: 5px;
+    width: 100%;
+}
+
+textarea {
+    padding: 0.5rem;
+    border: 1px solid var(--first-color);
+    border-radius: 5px;
+    width: 100%;
+    height: 10rem;
+}
+
+button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--first-color);
+    color: var(--third-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: var(--third-color);
+    color: var(--fourth-color);
+}
