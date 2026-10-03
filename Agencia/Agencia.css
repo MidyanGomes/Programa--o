@@ -60,7 +60,7 @@ ul {
     color: var(--second-color);
 }
 
-#Home {
+.section__home {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,7 +73,7 @@ ul {
     color: var(--fourth-color);
 }
 
-#SobreNos {
+.section__sobre-nos {
     padding: 1rem;
     margin: 1rem;
     text-align: center;
@@ -83,12 +83,12 @@ ul {
     color: var(--second-color);
 }
 
-#SobreNos h2 {
+.section__sobre-nos--title{
     text-align: center;
     color: var(--first-color);
 }
 
-#Servicos {
+.section__servicos {
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
@@ -101,7 +101,7 @@ ul {
     color: var(--fourth-color);
 }
 
-#Depoimentos {
+.section__depoimentos {
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap:20px;
@@ -115,13 +115,13 @@ ul {
     color: var(--second-color);
 }
 
-#Servicos h2, #Depoimentos h2, #Contato h2 {
+.section__sobre-nos--title, .section__servicos--title, .section__depoimentos--title, .section__contato--title {
     text-align: center;
     color: var(--first-color);
     grid-column: 1 / -1;
 }
 
-#Contato {
+.section__contato {
     text-align: center;
     align-items: center;
     padding: 30px;
@@ -171,12 +171,12 @@ button:hover {
 }
 
 @media (max-width: 480px) {
-    nav ul {
+    .nav__ul {
         flex-direction: column;
         gap: 10px;
     }
 
-    #Servicos, #Depoimentos {
+    .section__servicos, .section__depoimentos {
         grid-template-columns: 1fr;
     }
 
@@ -186,12 +186,12 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-    nav ul {
+    .nav__ul {
         flex-direction: column;
         gap: 10px;
     }
 
-    #Servicos, #Depoimentos {
+    .section__servicos, .section__depoimentos {
         grid-template-columns: 1fr;
     }
 
@@ -201,7 +201,7 @@ button:hover {
 }
 
 @media (max-width: 1024px) {
-    #Servicos, #Depoimentos {
+    .section__servicos, .section__depoimentos {
         grid-template-columns: 1fr;
     }
 
