@@ -169,3 +169,43 @@ button:hover {
     background-color: var(--third-color);
     color: var(--fourth-color);
 }
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #Servicos, #Depoimentos {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #Servicos, #Depoimentos {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 1024px) {
+    #Servicos, #Depoimentos {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        max-width: 80%;
+    }
+}
