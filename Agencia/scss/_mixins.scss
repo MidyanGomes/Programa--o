@@ -1,0 +1,8 @@
+@use 'variaveis';
+
+@mixin input-area {
+  padding: 0.5rem;
+  border: 1px solid variaveis.$first-color;
+  border-radius: 5px;
+  width: 100%;
+}
