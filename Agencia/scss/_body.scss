@@ -10,3 +10,39 @@ body {
   min-height: 100vh;
   align-items: center;
 }
+
+img {
+    display: block;       
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: variaveis.$third-color;
+  text-align: center;
+}
+
+nav {
+    display:flex;
+    background-color: variaveis.$first-color;
+    padding: 1rem;
+    min-width: 100vw;
+    align-items: variaveis.$align-items-center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: variaveis.$second-color;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    color: variaveis.$second-color;
+}
